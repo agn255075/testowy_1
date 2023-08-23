@@ -1,53 +1,48 @@
-﻿string title = "Zadanie domowe - dzien 4";
-Console.WriteLine(title);
-string name = "Ewa";
-Console.WriteLine(name);
-char gender = 'K';
-Console.WriteLine("płeć:" + gender);
-var ageEwa = 33;
-Console.WriteLine("wiek:" + ageEwa);
-var age1 = 30;
-var age2 = 17;
-string name2 = "Niepełnoletni mężczyzna";
+﻿Console.WriteLine("Zadanie - dzień 5");
+int number = 255075;
+Console.WriteLine("my number: 255075");
 
-Console.WriteLine("Kobieta, poniżej 30 lat");
-Console.WriteLine("Ewa, lat 33");
-Console.WriteLine("Niepełnoletni mężczyzna");
+string numberInString = number.ToString();
+char[] letters = numberInString.ToArray();
 
-bool isActive = false;
-isActive = true;
-var isValid = 33 < 30;
+Console.WriteLine("ilość znaków:");
+Console.WriteLine(letters.Length);
+Console.WriteLine("znak pierwszy to:");
+Console.WriteLine(letters[0]);
 
-if (ageEwa < age1)
-{
-    Console.WriteLine("Ewa jest w grupie wiekowej 30-latek");
-}
-else
-{
-    Console.WriteLine("Ewa jest starsza niż grupa 30");
-}
+Console.WriteLine("ilość wystąpień poszczególnych znaków:");
+int counter0 = 0;
+int counter1 = 0;
+int counter2 = 0;
+int counter3 = 0;
+int counter4 = 0;
+int counter5 = 0;
+int counter6 = 0;
+int counter7 = 0;
+int counter8 = 0;
+int counter9 = 0;
 
-if (isValid)
+foreach (char letter in numberInString)
 {
-    Console.WriteLine("Ewa jest w grupie młodszych");
-}
-else
-{
-    Console.WriteLine("Ewa jest w grupie starszych kobiet");
-}
+    if (letter == '0') { counter0++; }
 
-if (age2 == 18)
-{
-    Console.WriteLine("Mężczyzna poniżej 18 lat jest pełnoletni");
+    else if (letter == '1')    { counter1++; }
+    else if (letter == '2')    { counter2++; }
+    else if (letter == '3')    { counter3++; }
+    else if (letter == '4')    { counter4++; }
+    else if (letter == '5')    { counter5++; }
+    else if (letter == '6')    { counter6++; }
+    else if (letter == '7')    { counter7++; }
+    else if (letter == '8')    { counter8++; }
+    else if (letter == '9')    { counter9++; }
 }
-else
-{
-    Console.WriteLine("Mężczyzna poniżej 18 lat jest niepełnoletni");
-}
-if (age2 == 18)
-{
-    Console.WriteLine("Mężczyzna poniżej 18 lat jest pełnoletni");
-}
-
-else
-    Console.WriteLine(!(age2 == 18));
+    Console.WriteLine("0 => " + counter0++);
+    Console.WriteLine("1 => " + counter1++);
+    Console.WriteLine("2 => " + counter2++);
+    Console.WriteLine("3 => " + counter3);
+    Console.WriteLine("4 => " + counter4);
+    Console.WriteLine("5 => " + counter5);
+    Console.WriteLine("6 => " + counter6);
+    Console.WriteLine("7 => " + counter7);
+    Console.WriteLine("8 => " + counter8);
+    Console.WriteLine("9 => " + counter9); 
